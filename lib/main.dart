@@ -19,6 +19,11 @@ class MoodCalendarApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.blueGrey[900], // Тёмно-серый с синим оттенком
+          foregroundColor: Colors.white, // Цвет текста и иконок
+          elevation: 4, // Тень
+        ),
       ),
       home: MoodCalendarScreen(prefs: prefs),
     );
